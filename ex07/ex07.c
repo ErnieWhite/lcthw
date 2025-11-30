@@ -28,11 +28,11 @@ int main(int argc, char *argv[]) {
     printf("You are expected to have %f bugs.\n", expected_bugs);
 
     double part_of_universe = expected_bugs / universe_of_defects;
-    printf("That is only a %e portion of the universe.\n");
+    printf("That is only a %e portion of the universe.\n", part_of_universe);
 
     // This makes no sense, just a demo of something wierd
     char nul_byte = '\0';
-    int care_percetage = bugs * nul_byte;
+    int care_percentage = bugs * nul_byte;
     printf("Which means you should care %d%%.\n", care_percentage);
 
     return 0;
