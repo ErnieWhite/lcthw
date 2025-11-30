@@ -10,7 +10,7 @@ build/ex3: $(OBJECTS)
 	$(CC) $(OBJECTS) -o build/ex3
 
 obj/%.o: src/%.c
-	$(CC) $(CFLAGS) -c $< -o $@
+	$(CC) $(CCFLAGS) -c $< -o $@
 
 clean:
 	rm -f obj/*.o bin/ex3
