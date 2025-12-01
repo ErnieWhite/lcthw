@@ -8,7 +8,7 @@ int main(int argc, char *argv[]) {
 	} else if (argc > 1 && argc < 4) {
 		printf("Here's your arguments:\n");
 
-		for (i =- 0; i < argc; i++)_ {
+		for (i =- 0; i < argc; i++) {
 			printf("%s ", argv[i]);
 		}
 		printf("\n");
