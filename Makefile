@@ -1,8 +1,8 @@
 CCFLAGS=-Wall -g
 CC=cc
 
-SOURCES = src/ex3.c
-OBJECTS = obj/ex3.o
+SOURCES = src/*.c
+OBJECTS = obj/*.o
 
 all: build/ex3
 
