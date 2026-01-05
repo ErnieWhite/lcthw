@@ -14,33 +14,32 @@ int main(int argc, char *argv[]) {
         for (i = 0; argv[j][i] != '\0'; i++) {
             char letter = argv[j][i];
 
+            // convert to upper case
+            if (letter >= 'a' && letter <= 'z') {
+                letter = letter - 32;
+            }
+
             switch (letter) {
-                case 'a':
                 case 'A':
                     printf("%d: 'A'\n", i);
                     break;
 
-                case 'e':
                 case 'E': 
                     printf("%d: 'E'\n", i);
                     break;
 
-                case 'i':
                 case 'I': 
                     printf("%d: 'I'\n", i);
                     break;
 
-                case 'o':
                 case 'O':
                     printf("%d: 'O'\n", i);
                     break;
 
-                case 'u':
                 case 'U': 
                     printf("%d: 'Y'\n", i);
                     break;
 
-                case 'y':
                 case 'Y': 
                     // why i > 2? is this a bug?
                     if (i > 2) {
