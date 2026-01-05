@@ -1,9 +1,10 @@
 #include <stdio.h>
 
-int main(int argc, char *argvp[]) {
-    int i = 0;
+int main(void) {
+    int i;
+    printf("I: %d\n", i);
     while (i < 25) {
-        printf("%d", i);
+        printf("%d\n", i);
         i++;
     }
 
